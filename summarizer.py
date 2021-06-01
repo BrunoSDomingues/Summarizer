@@ -20,6 +20,7 @@ def summarization(args):
             raise ValueError("Unsupported method")
 
     elif args.lang == "EN":
+        # Não sei ao certo porque, mas este warning aparece nos stopwords em inglês somente
         warnings.filterwarnings(
             "ignore",
             message="Your stop_words may be inconsistent with your preprocessing.",
